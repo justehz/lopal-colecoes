@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        const aluno1 = "Aline";
+        const aluno2 = "Athur";
+        const aluno3 = "Bárbara";
+
+        document.write(aluno1 + "<br>");
+        document.write(aluno2 + "<br>");
+        document.write(aluno3 + "<br>");
+
+        //Arrays
+        const alunos = ["Aline", "Athur", "Bárbara", "Bruna Luise", "Bruna Torres", "Bruna Velôso", "Cauã"];
+        let adicionarMais = true
+
+        while (adicionarMais) {
+            let novoNome = prompt("digite o nome do aluno para adicionar a lista")
+            alunos.push(novoNome);
+            adicionarMais = confirm("Deseja adicionar mais um?")
+        }
+
+        for (let indice = 0; indice < alunos.length; indice++) {
+            document.write(alunos[indice] + "<br>");
+        }
+
+    </script>
+</body>
+
+</html>
